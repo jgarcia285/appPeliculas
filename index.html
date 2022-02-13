@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Peliculas</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -19,60 +20,39 @@
 
         <nav class="nav">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#" onclick="window.location.reload()">Inicio</a></li>
                 <li><a href="#">Peliculas</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
 
-        <section class="content">
-            <article class="item">
-                <h3>Batman</h3>
-                <p class="genre">Accion - Superheroes</p>
+        <section class="content" id="content">
 
-                <button class="edit">Editar</button>
-                <button class="delete">Borrar</button>
-            </article>
-
-            <article class="item">
-                <h3>Rapido y Furioso 2</h3>
-                <p class="genre">Accion - Autos</p>
-
-                <button class="edit">Editar</button>
-                <button class="delete">Borrar</button>
-            </article>
-
-            <article class="item">
-                <h3>El Señor de los Anillos</h3>
-                <p class="genre">Accion - Fantasia</p>
-
-                <button class="edit">Editar</button>
-                <button class="delete">Borrar</button>
-            </article>
         </section>
 
         <aside class="aside">
             <div class="search">
-                <h3 class="title">Buscador</h3>
+                <h3 class="title">Buscar pelicula</h3>
                 <form>
-                    <input type="text" placeholder="Buscar..."/>
-                    <button class="btnSearch">Buscar</button>
+                    <input type="text" id="searchField" placeholder="Buscar..." />
+                    <button class="btnSearch" id="btnSearch">Buscar</button>
                 </form>
             </div>
 
             <div class="add">
                 <h3 class="title">Agregar pelicula</h3>
                 <form>
-                    <input type="text" placeholder="Titulo" />
-                    <input type="text" placeholder="Genero/s"></input>
-                    <input type="submit" class="btnSend"/>
+                    <input type="text" id="title" placeholder="Titulo" />
+                    <textarea id="review" placeholder="Reseña"></textarea>
+                    <input type="text" id="rating" placeholder="Puntaje">
+                    <input type="submit" id="addMovie" class="btnSend" value="Agregar" />
                 </form>
             </div>
         </aside>
 
         <footer class="footer">
-            &copy; Practica Typescript
+            &copy; Practica JavaScript
         </footer>
 
     </div>

@@ -86,7 +86,7 @@ body{
     box-shadow: 0px 0px 6px #DDDDDD;
 }
 
-aside input[type="text"]{
+input[type="text"], textarea{
     display: block;
     margin: 0 auto;
     margin-top: 15px;
@@ -98,6 +98,10 @@ aside input[type="text"]{
     opacity: 4;
     outline: 0;
     border-color: transparent;
+}
+
+.edit-form {
+    border-top: 1px solid #DDDDDD;
 }
 
 .item{
@@ -172,6 +176,12 @@ button, input[type="submit"]{
     margin-left: 5px;
     margin-top: 32px;
 }
+
+.content div .searchError{
+    margin-left: 10px;
+    text-align: center;
+}
+
 
 @media (max-width: 1085px){
     .content{
