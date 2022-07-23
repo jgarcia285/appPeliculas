@@ -1,13 +1,13 @@
 export default class Storage {
 
     constructor() {
-        this.id = 1;
+        this.id = 4;
     }
 
     getData() {
         let movies = JSON.parse(localStorage.getItem('pelicula'));
 
-        if (!movies || movies.lenght < 1) {
+        if (!movies || movies.lenght < 1 || movies === []) {
             movies = [
                 {
                     id: 0,

@@ -1,7 +1,7 @@
 import Add from './modules/add.js';
 import List from './modules/list.js';
 import Storage from './modules/storage.js';
-import Search from './modules/search.js';
+import search from './modules/search.js';
 
 export default class App {
 
@@ -18,7 +18,7 @@ export default class App {
 
         this.list.showList(movies);
 
-        Search();
+        search();
     }
 
 }

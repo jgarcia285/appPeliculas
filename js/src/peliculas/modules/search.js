@@ -24,10 +24,7 @@ export default function () {
             list.showList(newMovies);
         }
 
-
-
         return false;
     });
-
 
 }
